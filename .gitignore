@@ -1,0 +1,7 @@
+# Include only these 5 files
+*
+!.gitignore
+!LICENSE
+!*.md
+!*.pdf
+!*.tex
