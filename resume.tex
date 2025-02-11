@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------HEADING-----------
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Alaqmar Gandhi} \\ \vspace{1pt}
+    \small +1 (289) 931-0053 $|$ \href{mailto:ag22oq@brocku.ca}{\underline{ag22oq@brocku.ca}} $|$ 
+    \href{https://linkedin.com/in/alaqmarg}{\underline{linkedin.com/in/alaqmarg}} $|$
+    \href{https://github.com/alaqmarg}{\underline{github.com/alaqmarg}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer - Co-op}{Sep. 2024 -- Dec. 2024}
+      {Boltable Studio}{Abu Dhabi, United Arab Emirates (On-site)}
+      \resumeItemListStart
+        \resumeItem{Developed backend systems in \textbf{Express.js} retrieving and analysing data from 12+ games. }
+        % \resumeItem{Managed historical game analytic data using MongoDB for 400M+ visits.}
+        \resumeItem{Containerized and optimized Docker builds for a full-stack website using \textbf{Docker.}}
+        \resumeItem{Developed CI/CD pipelines utilizing \textbf{GitHub Actions} and \textbf{Portainer.}}
+        \resumeItem{Contributed to frontend development of the client-facing website in \textbf{React} using the \textbf{Next.js} framework.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+    {Software Developer - Full-time}{May 2024 - Aug. 2024}
+      \resumeItemListStart
+        \resumeItem{Developed Roblox experiences for brands using Roblox Studio and Roblox \textbf{Luau}}
+        % \resumeItem{Handled player data for 200M+ players using ProfileService, complying with GDPR regulations.}
+        \resumeItem{Implemented version control workflows for Roblox experiences using \textbf{Knit, Argon and Git.}}
+        \resumeItem{Developed CI/CD pipelines for Roblox experiences utlizing \textbf{GitHub Actions} using the Roblox Open Cloud API.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lua Programmer}{Sep. 2023 -- Feb. 2024}
+      {LandVault}{Canada (Remote)}
+      \resumeItemListStart
+        \resumeItem{Developed and implemented algorithms for \textbf{procedurally generated} mini-games.}
+        \resumeItem{Developed \textbf{custom physics mechanics} to work with the Roblox game engine.}
+        \resumeItem{Managed player data within the experience utilizing \textbf{ProfileService}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Extracurriculars}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Brock Computer Science Club} $|$ \emph{Angular (TypeScript, HTML, SCSS), Firestore, GitHub Pages}}{Jun. 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a merhandise store for a static website utilizing Stripe Checkout and \textbf{Stripe sessions API.}}
+            \resumeItem{Contributed to the development of a static website written in \textbf{Angular.}}
+            \resumeItem{Utilized \textbf{FireStore} to save and access administrative configuration and event information data.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{ByteNet} $|$ \emph{Lua, Networking}}{Jan. 2025 -- Present}
+        \resumeItemListStart
+          \resumeItem{Contributed to the development of ByteNet, a open source Roblox networking library written in \textbf{Luau}.}
+          \resumeItem{Contributed to the development of a \textbf{buffered networking} library to improve networking performance.}
+          \resumeItem{Developed an understanding for \textbf{serialization} and its applications with improving networking performance.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{International Collegiate Programming Contest} $|$ \emph{Python, C++}}{Oct. 2024}
+          \resumeItemListStart
+            \resumeItem{Competed against 159 teams in the ICPC NA East Central region, placed \textbf{top 4} universities on the Windsor site.}
+            \resumeItem{Collaborated in a team of 3 and \textbf{solved 8 of 12} competitive programming problems.}
+            \resumeItem{Utilized \textbf{C++} to write time efficient solutions for limited runtime problems.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brock University}{St. Catharines, ON}
+      {Bachelor of Science in Computer Science - Co-op (Honors)}{Sep. 2023 -- Dec. 2027}
+    \resumeItemListStart
+      \resumeItem{Programming for Big Data (NumPy, pandas)}
+      \resumeItem{Data Structures and Algorithms}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript/TypeScript, C/C++, HTML/CSS, Lua} \\
+     \textbf{Frameworks}{: React, Node.js, Next.js, Angular, Knit} \\
+     \textbf{Developer Tools}{: Git, Docker, VSCode, PyCharm, IntelliJ, Eclipse, Portainer, Harbor, Rojo/Argon} \\
+     \textbf{Libraries}{: pandas, NumPy, ProfileService, ByteNet}
+    }}
+ \end{itemize}
+%
+
+\end{document}
